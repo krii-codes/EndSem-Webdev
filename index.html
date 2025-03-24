@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+        }
+        .main {
+            display: flex;
+            gap: 10px;
+        }
+        .category, .input-group, .profile-img {
+            margin-left: 10px;
+        }
+        footer {
+            display: grid;
+            grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        li {
+            list-style-type: none;
+        }
+        .imgright {
+            align-items: start;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        main img {
+            max-width: 50%;
+            height: auto;
+        }
+        main div {
+            max-width: 45%;
+        }
+        section {
+            padding: 20px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="eduport.png" alt="profile" width="60%">
+        </div>
+
+        <div class="category">
+            <button class="btn btn-primary" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              Category
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="btn-group">
+                <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                  Demos
+                </span>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                </ul>
+            </div>
+              
+            <div class="btn-group">
+                <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                  Pages
+                </span>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                </ul>
+            </div>
+              
+            <div class="btn-group">
+                <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Accounts
+                </span>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                </ul>
+            </div>
+              
+            <div class="btn-group">
+                <span class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                  Mega Menu
+                </span>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                </ul>
+            </div>
+              
+            <div class="btn-group">
+                <span class="bi bi-three-dots" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                </span>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="width: 30%;">
+            <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                <span class="input-group-text bi bi-search" id="addon-wrapping"></span>
+            </div>
+        </div>
+
+        <div class="profile-img">
+            <img src="eduport.png" alt="profile" style="border-radius: 100px; width: 100px;">
+        </div>
+    </header>
+
+    <main>
+      <img src="Screenshot 2025-03-24 161301.png" alt="Limitless learning at your fingertips">
+      <div>
+          <h1>Limitless learning at your fingertips</h1>
+          <p>Online learning and teaching marketplace with 5K+ courses & 10M students. Taught by experts to help you acquire new skills.</p>
+          <button class="btn btn-primary">Get Started</button>
+      </div>
+    </main>
+
+    <section>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample01" aria-expanded="false" aria-controls="collapseWidthExample">
+          Toggle width collapse
+        </button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample02" aria-expanded="false" aria-controls="collapseWidthExample">
+          Toggle width collapse
+        </button>
+      </p>
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample01">
+          <div class="card card-body" style="width: 300px;">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="collapse collapse-horizontal" id="collapseWidthExample02">
+          <div class="card card-body" style="width: 300px;">
+            This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="card mb-3" style="max-width: 540px;">
+            <img src="/eduport.png" class="img-fluid rounded-start" alt="eduport" width="1000px">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners
+                  </p>
+                  <p>
+                    <button class="bi bi-facebook btn btn-light"></button>
+                    <button class="bi bi-instagram btn btn-light"></button>
+                    <button class="bi bi-twitter btn btn-light"></button>
+                    <button class="bi bi-linkedin btn btn-light"></button>
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" style="font-weight: bold;">
+              Company
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0" style="font-size: 15px;">
+                <p>
+                  <li>About Us</li>
+                  <li>Contact Us</li>
+                  <li>News</li>
+                  <li>Blogs</li>
+                  <li>Library</li>
+                </p>
+              </blockquote>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" style="font-weight: bold;">
+              Community
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0" style="font-size: 15px;">
+                <p>
+                  <li>Documentation</li>
+                  <li>FAQ</li>
+                  <li>Forum</li>
+                  <li>Sitemap</li>
+                </p>
+              </blockquote>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" style="font-weight: bold;">
+              Teaching
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0" style="font-size: 15px;">
+                <p>
+                  <li>Become A Teacher</li>
+                  <li>How to guide?</li>
+                  <li>Terms and Conditions</li>
+                </p>
+              </blockquote>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" style="font-weight: bold;">
+              Contact
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0" style="font-size: 15px;">
+                <p>
+                  <li>Toll Free: +1234 568 963</li><span style="font-size: smaller;">(9:AM to 8:PM IST)</span> <br>
+                  <li>Email: example@gmail.com</li>
+                  <div>
+                    <img src="playstore.png" alt="playstore" width="70%">
+                  </div>
+                </p>
+              </blockquote>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
